@@ -1,0 +1,62 @@
+//REM
+@function rem($px) {
+   $result: math.div($px, 16) + rem;
+   @return $result;
+}
+//EM
+@function em($px, $current: 16) {
+   $result: math.div($px, $current) + em;
+   @return $result;
+}
+// MIXIN-1
+@mixin link($ItemColor: #f8f9fa80) {
+   font-weight: 500;
+   font-size: rem(12);
+   line-height: rem(25);
+   color: $ItemColor;
+}
+@mixin under-title($ItemColor: #ffffff) {
+   color: $ItemColor;
+   font-family: Open Sans;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.38; /* 22/16 */
+}
+@mixin title($ItemColor: #ffffff) {
+   color: $ItemColor;
+   font-family: Overpass;
+   font-size: 56px;
+   font-weight: 700;
+   line-height: 1.26; /* 71/56 */
+}
+@mixin text($ItemColor: #ffffff) {
+   color: $ItemColor;
+   font-family: Open Sans;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.6; /* 32/20 */
+}
+@mixin button($btnBgColor: #ffffff,$btnColor: #100c46) {
+   border-radius: 3px;
+   background:$btnBgColor;
+   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.3);
+   display: inline-block;
+
+   color:$btnColor;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.77; /* 32/18 */
+   padding: rem(19) rem(46);
+}
+// shablon
+%info-title {
+   color: #fff;
+   font-size: rem(20);
+   font-weight: 600;
+   line-height: 1.6; /* 160% */
+}
+// %title {
+//    font-weight: 700;
+//    font-size: rem(25);
+//    line-height: rem(40);
+// }
