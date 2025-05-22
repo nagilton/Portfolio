@@ -133,7 +133,6 @@ body {
 .spollers__title::after {
   content: "";
   background-image: url(../../img/svg/plus.svg);
-  background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
   height: .9375rem;
