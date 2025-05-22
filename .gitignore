@@ -1,0 +1,11 @@
+node_modules/
+.gitignore
+flsStartTemplate/
+dist/
+Source/
+undefined
+version.json
+phpmailer/
+**/*.zip
+**/*.rar
+package-lock.json
