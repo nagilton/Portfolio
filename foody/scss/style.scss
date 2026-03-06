@@ -1,0 +1,168 @@
+@import "reset";
+@import "components";
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700);
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+.wrapper {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Poppins';
+    background-color: rgba(10, 19, 22, 1);
+
+}
+
+.header {
+
+    &__container {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        // gap: 15px;
+        gap: clamp(10px, 8.57px + 0.45vw, 15px);
+
+        @media (max-width:768px) {}
+    }
+
+    &__logo {
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &__menu {}
+
+}
+
+.menu {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    // gap: 15px;
+    @media (max-width:768px) {
+        justify-content: end;
+    }
+
+    &__button {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        column-gap: clamp(20px, 11.43px + 2.68vw, 50px);
+
+        @media(max-width: 768px) {
+            position: absolute;
+            top: 0;
+            left: -110%;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            min-height: 100%;
+            transition: left 0.5s ease-in;
+            background-color: rgba(0, 0, 0, 0.447);
+            row-gap: 20px;
+            font-size: 24px;
+
+        }
+
+        .some-class & {
+            left: 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            transition: all 0.5s ease-in;
+            content: '';
+            position: absolute;
+            top: 110%;
+            left: -20%;
+            width: 0px;
+            height: 2px;
+            background: #D68240;
+        }
+
+        &:hover {
+            &::before {
+                width: 140%;
+            }
+        }
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        line-height: 1.5;
+        transition: color 1s ease;
+
+        &:hover {
+            color: #D68240;
+        }
+    }
+
+    &__burger {
+        width: 30px;
+
+        img {
+            max-width: 100%;
+        }
+
+        @media (min-width:768.98px) {
+            display: none;
+        }
+    }
+
+
+}
+
+.icon {
+    position: relative;
+    z-index: 4;
+    height: 30px;
+    width: 30px;
+    display: block;
+    fill: #D68240;
+
+    &:hover {
+
+        fill: rgb(255, 255, 255);
+    }
+}
+
+// HERO
+.hero {
+    position: relative;
+
+    &__container {}
+
+    &__image {
+        
+    }
+
+    &__content {}
+
+    &__untitle {}
+
+    &__title {}
+
+    &__btns {}
+
+    &__button--br {}
+
+    &__button {}
+}
