@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1772784485173"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1772784485173">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1772784485173">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__logo">
+					<!-- <img src="@img/logo/SQ R3.svg" alt="logo"> -->
+					<span id="logo">SQ R3</span>
+				</div>
+				<div class="header__body">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link menu__link--active">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Service</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Furniture</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					<button data-fls-button="" type="button" class="button header__button">Order Now</button>
+				</div>
+				<button class="header__button-searth --icon-Search" type="button"></button>
+			</header>
+			<main class="page">
+				<div data-fls-index="" class="index">
+					<section id="home" class="index__hero hero">
+						<div class="hero__main">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/hero/01-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/hero/01-1200.webp" type="image/webp">
+								<img alt="hero-image" src="./assets/img/hero/01.webp">
+							</picture>
+							<div class="hero__social social">
+								<a href="#" class="social__link --icon-facebook"></a>
+								<a href="#" class="social__link --icon-instagram"></a>
+								<a href="#" class="social__link --icon-twitter"></a>
+							</div>
+							<div class="hero__content">
+								<div class="hero__block-title block-title">
+									<h1 class="block-title__title">Enjoy your life in our luxurious furniture</h1>
+									<div class="block-title__text">
+										<p>If you are looking for a furniture then you have come to the right place.</p>
+									</div>
+									<button data-fls-button="" type="button" class="block-title__button button">Order Now</button>
+								</div>
+							</div>
+						</div>
+						<div class="hero__stata statistic">
+							<div class="statistic__body">
+								<div class="statistic__column">
+									<div class="statistic__value">120 k</div>
+									<div class="statistic__text">Furniture Sale</div>
+								</div>
+								<div class="statistic__column">
+									<div class="statistic__value">98 k</div>
+									<div class="statistic__text">
+										Review
+										<span>
+											<img src="./assets/img/hero/star.svg" alt="star">
+										</span>
+										(4.5)
+									</div>
+								</div>
+								<div class="statistic__column">
+									<div class="statistic__value">125</div>
+									<div class="statistic__text">Furniture Categories</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="about" class="index__about about-us">
+						<div data-fls-lable="" class="about-us__lable lable">
+							<h2 class="lable__title">Learn about us</h2>
+							<div class="lable__text">
+								<p>It’s short title here</p>
+							</div>
+						</div>
+						<div class="about-us__body">
+							<div class="about-us__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/about/imgAbout-600.webp" type="image/webp">
+									<img alt="imgAbout" src="./assets/img/about/imgAbout.webp">
+								</picture>
+							</div>
+							<div class="about-us__content">
+								<div class="about-us__text">
+									<p>
+										Lorem Ipsum has been the industry's standard dummy text ever to since the 1500s, type and scrambled it to make a type
+               specimen book. It has survived not only five centuries, but also the leap into electronic typesetting. type and
+               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+               typesetting
+									</p>
+								</div>
+								<button data-fls-button="" class="about-us__btn--p13 button" type="button">More about us</button>
+								<div class="about-us__partners">
+									<div class="about-us__image">
+										<picture>
+											<img alt="amazon" src="./assets/img/about/amazon.webp">
+										</picture>
+									</div>
+									<div class="about-us__image">
+										<picture>
+											<img alt="amazon" src="./assets/img/about/aliubaba.webp">
+										</picture>
+									</div>
+									<div class="about-us__image">
+										<picture>
+											<img alt="amazon" src="./assets/img/about/elipse.webp">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="service" class="index__service service">
+						<div class="service__container">
+							<div data-fls-lable="" class="service__lable lable">
+								<h2 class="lable__title">We provide that service</h2>
+								<div class="lable__text">
+									<p>It is a long established fact that a reader will be distracted by the service.</p>
+								</div>
+							</div>
+							<div class="service__columns">
+								<article class="service__item item-service">
+									<div class="item-servise__icon item-servise__icon-01 --icon-truck"></div>
+									<h3 class="item-servise__title">Free Delevary</h3>
+									<div class="item-servise__text">
+										<p>It is a long established fact that a reader will be the service.</p>
+									</div>
+								</article>
+								<article class="service__item item-service">
+									<div class="item-servise__icon item-servise__icon-02 --icon-check"></div>
+									<h3 class="item-servise__title">100% Guarnatee</h3>
+									<div class="item-servise__text">
+										<p>It is a long established fact that a reader will be the service.</p>
+									</div>
+								</article>
+								<article class="service__item item-service">
+									<div class="item-servise__icon item-servise__icon-03 --icon-medal"></div>
+									<h3 class="item-servise__title">Best Quality</h3>
+									<div class="item-servise__text">
+										<p>It is a long established fact that a reader will be the service.</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section id="furniture" class="index__furniture furniture">
+						<div class="furniture__container">
+							<div class="furniture__block-title title-block">
+								<h2 class="title-block__title">Our Furniture</h2>
+								<div class="title-block__text">
+									<p>It is a long established fact that a reader will be distracted by the service.</p>
+								</div>
+							</div>
+							<div class="furniture__body">
+								<div class="furniture__filter filter-furniture">
+									<div class="filter-furniture__searth">
+										<input type="text" placeholder="Search a furniture" class="filter-furniture__input">
+										<button data-fls-button="" type="submit" class="filter-furniture__btn--icon-Search button button--p13"></button>
+									</div>
+									<div data-spollers="" data-fls-spollers="768,max" class="filter-furniture__spollers spollers">
+										<details class="spollers__item">
+											<summary class="spollers__title">
+												<a class="spollers__link active" href="#">All</a>
+											</summary>
+											<div class="spollers__body">
+												<a href="#" class="spollers__link">Table</a>
+												<a href="#" class="spollers__link">Table</a>
+												<a href="#" class="spollers__link">Bed</a>
+												<a href="#" class="spollers__link">Sofa</a>
+												<a href="#" class="spollers__link">Wardrobe</a>
+												<a href="#" class="spollers__link">Almirah</a>
+												<a href="#" class="spollers__link">Dimple</a>
+												<a href="#" class="spollers__link">Rack</a>
+												<a href="#" class="spollers__link">Stand</a>
+											</div>
+										</details>
+									</div>
+								</div>
+								<div class="furniture__galery galery">
+									<div class="galery__body">
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/1.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/2.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/3.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/4.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/5.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/6.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/7.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+										<article class="galery-item">
+											<a href="#" class="galery-item__img">
+												<picture>
+													<img alt="image" src="./assets/img/furniture/8.webp">
+												</picture>
+											</a>
+											<div class="galery-item__body">
+												<div class="galery-item__row">
+													<h4 class="galery-item__title">Furniture Name</h4>
+													<span class="galery-item__price">$ 250</span>
+												</div>
+												<div class="galery-item__desc">
+													<p>It is a long estiabs lished fact that a reader will be the service.</p>
+												</div>
+												<button data-fls-button="" type="button" class="galery-item__button button">Order Now</button>
+											</div>
+										</article>
+									</div>
+									<div class="galery__footer">
+										<button data-fls-button="" type="button" class="galery__button button">View All</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="index__clients clients">
+						<div class="clients__container">
+							<div data-fls-lable="" class="lable">
+								<h2 class="lable__title">What say clients about us</h2>
+								<div class="lable__text">
+									<p>
+										It is a long established fact that a reader
+										<br>
+										will be distracted by the service.
+									</p>
+								</div>
+							</div>
+							<div class="clients__swiper swiper" data-fls-slider="">
+								<button type="button" class="swiper-button swiper-button-prev"></button>
+								<button type="button" class="swiper-button swiper-button-next"></button>
+								<div class="clients__wrapper swiper-wrapper">
+									<article class="clients__slide slide-clients swiper-slide">
+										<div class="slide-clients__img">
+											<picture>
+												<img alt="image" src="./assets/img/clients/01.webp">
+											</picture>
+										</div>
+										<div class="slide-clients__content">
+											<div class="slide-clients__name">Mr. Jone Ambrose</div>
+											<div class="slide-clients__date">20 - 07 - 21</div>
+											<div class="slide-clients__text">
+												<p>
+													<span>“</span>
+													Lorem Ipsum has been the industry by standard dummy
+                            text ever to since the 1500s, it’s  type and scrambled it to
+                           make a type specimen book. It’s has survived not only five.
+													<span>“</span>
+												</p>
+											</div>
+											<div class="slide-clients__row-stars">
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+											</div>
+										</div>
+									</article>
+									<article class="clients__slide slide-clients swiper-slide">
+										<div class="slide-clients__img">
+											<picture>
+												<img alt="image" src="./assets/img/clients/02.webp">
+											</picture>
+										</div>
+										<div class="slide-clients__content">
+											<div class="slide-clients__name">Mr. Jone Ambrose</div>
+											<div class="slide-clients__date">20 - 07 - 21</div>
+											<div class="slide-clients__text">
+												<p>
+													<span>“</span>
+													Lorem Ipsum has been the industry by standard dummy
+                            text ever to since the 1500s, it’s  type and scrambled it to
+                           make a type specimen book. It’s has survived not only five.
+													<span>“</span>
+												</p>
+											</div>
+											<div class="slide-clients__row-stars">
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+											</div>
+										</div>
+									</article>
+									<article class="clients__slide slide-clients swiper-slide">
+										<div class="slide-clients__img">
+											<picture>
+												<img alt="image" src="./assets/img/furniture/2.webp">
+											</picture>
+										</div>
+										<div class="slide-clients__content">
+											<div class="slide-clients__name">Mr. Jone Ambrose</div>
+											<div class="slide-clients__date">20 - 07 - 21</div>
+											<div class="slide-clients__text">
+												<p>
+													<span>“</span>
+													Lorem Ipsum has been the industry by standard dummy
+                            text ever to since the 1500s, it’s  type and scrambled it to
+                           make a type specimen book. It’s has survived not only five.
+													<span>“</span>
+												</p>
+											</div>
+											<div class="slide-clients__row-stars">
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+											</div>
+										</div>
+									</article>
+									<article class="clients__slide slide-clients swiper-slide">
+										<div class="slide-clients__img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/hero/01-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/hero/01-1200.webp" type="image/webp">
+												<img alt="image" src="./assets/img/hero/01.webp">
+											</picture>
+										</div>
+										<div class="slide-clients__content">
+											<div class="slide-clients__name">Mr. Jone Ambrose</div>
+											<div class="slide-clients__date">20 - 07 - 21</div>
+											<div class="slide-clients__text">
+												<p>
+													<span>“</span>
+													Lorem Ipsum has been the industry by standard dummy
+                            text ever to since the 1500s, it’s  type and scrambled it to
+                           make a type specimen book. It’s has survived not only five.
+													<span>“</span>
+												</p>
+											</div>
+											<div class="slide-clients__row-stars">
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+												<span class="--icon-star"></span>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__contacts">
+						<div class="footer__logo">
+							<a href="#logo">SQ R3</a>
+						</div>
+						<a href="tel:+8801760-007083" class="footer__phone --icon-phone">+8801760-007083</a>
+						<a href="mailto:+8801760-007083" class="footer__meil-link --icon-meil">uiuxmdomith@gmail.com</a>
+						<div class="footer__soc">
+							<a class="--icon-facebook" href="#"></a>
+							<a class="--icon-instagram" href="#"></a>
+							<a class="--icon-twitter" href="#"></a>
+							<a class="--icon-linkedin" href="#"></a>
+						</div>
+					</div>
+					<div class="footer__links links">
+						<h6 class="links__title">Usefull Links</h6>
+						<ul class="links__list">
+							<li class="links__item">
+								<a href="#home">Home</a>
+							</li>
+							<li class="links__item">
+								<a href="#about">About Us</a>
+							</li>
+							<li class="links__item">
+								<a href="#service">Service</a>
+							</li>
+							<li class="links__item">
+								<a href="#furniture">Furniture</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__faq faq">
+						<h6 class="faq__title">faq</h6>
+						<ul class="faq__list">
+							<li class="faq__item">
+								<a href="#!">Lorem Ipsum Dolar</a>
+							</li>
+							<li class="faq__item">
+								<a href="#!">Lorem Ipsum Dolar</a>
+							</li>
+							<li class="faq__item">
+								<a href="#!">Lorem Ipsum Dolar</a>
+							</li>
+							<li class="faq__item">
+								<a href="#!">Lorem Ipsum Dolar</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__newsletter newsletter">
+						<div class="newsletter__title">Newsletter</div>
+						<div class="newsletter__meil">
+							<input autocomplete="off" type="email" name="form[]" data-fls-error="Ошибка" data-error="Помилка" placeholder="Enter your mail" class="newsletter__input">
+							<button type="submit" class="newsletter__button button">Send</button>
+						</div>
+						<a class="newsletter__app" href="#!">Download App</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
