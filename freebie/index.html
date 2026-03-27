@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<title>freebie-agency</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1774638868321"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774638868321">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774638868321">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<picture>
+							<img alt="" src="./assets/img/LOGO.webp">
+						</picture>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#weare" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#services" class="menu__link">Services</a>
+								</li>
+								<li class="menu__item">
+									<a href="#works" class="menu__link">Blog</a>
+								</li>
+								<li class="menu__item">
+									<a href="#contacts" class="menu__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-index="" class="index">
+					<section id="hero" class="hero">
+						<!-- Оболонка слайдера -->
+						<div data-fls-slider="" class="hero__slider slider-hero swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="slider-hero__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="slider-hero__slide swiper-slide">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/heroimg-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/heroimg-1200.webp" type="image/webp">
+										<img alt="heroimg" src="./assets/img/heroimg.webp">
+									</picture>
+									<div class="slider-hero__container">
+										<div class="slider-hero__text-block">
+											<h1 class="slider-hero__title">WHERE GREAT IDEAS COme to life</h1>
+											<p>Passionate creative studio helping sstartups grow their buisness!</p>
+										</div>
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="slider-hero__slide swiper-slide">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/elektroinstrumenty-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/elektroinstrumenty-1200.webp" type="image/webp">
+										<img alt="heroimg" src="./assets/img/elektroinstrumenty.webp">
+									</picture>
+									<div class="slider-hero__container">
+										<div class="slider-hero__text-block">
+											<h1 class="slider-hero__title">Making the impossible possible</h1>
+											<p>Passionate creative studio helping sstartups grow their buisness!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="slider-hero__pagin swiper-pagination"></div>
+							<!-- Якщо потрібен скролбар -->
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
+					</section>
+					<section id="weare" class="weare">
+						<div class="weare__container">
+							<div class="weare__heder">
+								<div class="weare__body">
+									<h2 class="weare__title">WE ARE</h2>
+									<div class="weare__lable">THE SQWD</div>
+									<div class="weare__text">
+										<p>
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ipsam sapiente unde suscipit.
+										</p>
+									</div>
+								</div>
+								<div class="weare__image">
+									<picture>
+										<img alt="imege" src="./assets/img/weare1.webp">
+									</picture>
+								</div>
+							</div>
+							<div class="weare__footer foot-block">
+								<div class="foot-block__text">
+									<p>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ipsam sapiente unde suscipit.
+									</p>
+								</div>
+								<div class="foot-block__image">
+									<picture>
+										<img alt="imege" src="./assets/img/weare2.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="services" class="services">
+						<div class="services__container">
+							<h2 class="services__title">our services</h2>
+							<div class="services__items">
+								<article class="services__article article-servic">
+									<div class="article-servic__head">
+										<h4 class="article-servic__title">branding</h4>
+										<div class="article-servic__icon --icon-acm"></div>
+									</div>
+									<div data-fls-showmore="" class="article-servic__text">
+										<div data-fls-showmore-content="" class="article-servic__content">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa reiciendis ad error.
+											</p>
+										</div>
+										<button hidden data-fls-showmore-button="" type="button" class="article-servic__more">
+											<span>read
+                        more</span>
+											<span>hide</span>
+										</button>
+									</div>
+								</article>
+								<article class="services__article article-servic">
+									<div class="article-servic__head">
+										<h4 class="article-servic__title">branding</h4>
+										<div class="article-servic__icon --icon-acm"></div>
+									</div>
+									<div data-fls-showmore="" class="article-servic__text">
+										<div data-fls-showmore-content="" class="article-servic__content">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa reiciendis ad error.
+											</p>
+										</div>
+										<button hidden data-fls-showmore-button="" type="button" class="article-servic__more">
+											<span>read
+                        more</span>
+											<span>hide</span>
+										</button>
+									</div>
+								</article>
+								<article class="services__article article-servic">
+									<div class="article-servic__head">
+										<h4 class="article-servic__title">branding</h4>
+										<div class="article-servic__icon --icon-acm"></div>
+									</div>
+									<div data-fls-showmore="" class="article-servic__text">
+										<div data-fls-showmore-content="" class="article-servic__content">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa reiciendis ad error.
+											</p>
+										</div>
+										<button hidden data-fls-showmore-button="" type="button" class="article-servic__more">
+											<span>read
+                        more</span>
+											<span>hide</span>
+										</button>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section id="works" class="works">
+						<div class="works__container">
+							<div class="works__columns">
+								<div class="works__header">
+									<h2 class="works__title">Latest Works</h2>
+									<ul class="works__filter">
+										<li class="works__link">
+											<button type="button">all</button>
+										</li>
+										<li class="works__link">
+											<button type="button">web design</button>
+										</li>
+										<li class="works__link">
+											<button type="button">brandiing</button>
+										</li>
+										<li class="works__link">
+											<button type="button">photography</button>
+										</li>
+										<li class="works__link">
+											<button type="button">illustration</button>
+										</li>
+									</ul>
+								</div>
+								<article class="works__item item-work item-work--right">
+									<div class="item-work__image">
+										<picture>
+											<img alt="image" src="./assets/img/works/works1.webp">
+										</picture>
+									</div>
+									<h3 class="item-work__title">100 YEARS PHOTOGRAPHY</h3>
+									<div class="item-work__text">
+										<label>Photography</label>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</article>
+								<article class="works__item item-work item-work--left">
+									<div class="item-work__image">
+										<picture>
+											<img alt="image" src="./assets/img/works/works2.webp">
+										</picture>
+									</div>
+									<h3 class="item-work__title">A KITTEN’S LIFE</h3>
+									<div class="item-work__text">
+										<label>Photography</label>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</article>
+								<article class="works__item item-work item-work--right">
+									<div class="item-work__image">
+										<picture>
+											<img alt="image" src="./assets/img/works/3.webp">
+										</picture>
+									</div>
+									<h3 class="item-work__title">GROOVEMADE PRODUCTS FOR MAC</h3>
+									<div class="item-work__text">
+										<label>Photography</label>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</article>
+								<article class="works__item item-work item-work--left">
+									<div class="item-work__image">
+										<picture>
+											<img alt="image" src="./assets/img/works/4.webp">
+										</picture>
+									</div>
+									<h3 class="item-work__title">APPLE’s LOST MAGIC</h3>
+									<div class="item-work__text">
+										<label>Photography</label>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section id="team" class="team">
+						<div class="team__container">
+							<h2 class="team__title">the team</h2>
+							<div class="team__items">
+								<article class="team__item item-team">
+									<picture>
+										<img alt="img" src="./assets/img/team/11Image.webp">
+									</picture>
+									<div class="item-team__body">
+										<div class="item-team__name">tom jones</div>
+										<div class="item-team__position">criative director</div>
+										<div class="item-team__desc">Create with simplicity in mind</div>
+									</div>
+								</article>
+								<article class="team__item item-team">
+									<picture>
+										<img alt="img" src="./assets/img/team/12Image.webp">
+									</picture>
+									<div class="item-team__body">
+										<div class="item-team__name">tom jones</div>
+										<div class="item-team__position">criative director</div>
+										<div class="item-team__desc">Create with simplicity in mind</div>
+									</div>
+								</article>
+								<article class="team__item item-team">
+									<picture>
+										<img alt="img" src="./assets/img/team/33Image.webp">
+									</picture>
+									<div class="item-team__body">
+										<div class="item-team__name">tom jones</div>
+										<div class="item-team__position">criative director</div>
+										<div class="item-team__desc">Create with simplicity in mind</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section class="testimonial">
+						<div class="testimonial__container">
+							<!-- Оболонка слайдера -->
+							<div class="testimonial__slider slider-testimonial swiper">
+								<!-- Частина слайдера, що рухається -->
+								<div class="slider-testimonial__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="slider-testimonial__slide slide-testimonial swiper-slide">
+										<div class="slide-testimonial__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eveniet incidunt vel explicabo
+                        assumenda cupiditate
+                        eius perspiciatis minus, at architecto nostrum, eum iusto? Veniam quos amet voluptatibus quia
+                        fugit dignissimos
+                        deleniti voluptates libero, doloremque, repellat iusto.
+											</p>
+										</div>
+										<div class="slide-testimonial__name">
+											david james
+											<span>/ web design</span>
+										</div>
+										<div class="slide-testimonial__rating">
+											<picture>
+												<img alt="img-stars" src="./assets/img/stars.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="slider-testimonial__slide slide-testimonial swiper-slide">
+										<div class="slide-testimonial__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eveniet incidunt vel explicabo
+                        assumenda cupiditate
+                        eius perspiciatis minus, at architecto nostrum, eum iusto? Veniam quos amet voluptatibus quia
+                        fugit dignissimos
+                        deleniti voluptates libero, doloremque, repellat iusto.
+											</p>
+										</div>
+										<div class="slide-testimonial__name">
+											david james
+											<span>/ web design</span>
+										</div>
+										<div class="slide-testimonial__rating">
+											<picture>
+												<img alt="img-stars" src="./assets/img/stars.webp">
+											</picture>
+										</div>
+									</div>
+									<!-- Слайд -->
+									<div class="testimonial__slide slide-testimonial swiper-slide">
+										<div class="slide-testimonial__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eveniet incidunt vel explicabo
+                        assumenda cupiditate
+                        eius perspiciatis minus, at architecto nostrum, eum iusto? Veniam quos amet voluptatibus quia
+                        fugit dignissimos
+                        deleniti voluptates libero, doloremque, repellat iusto.
+											</p>
+										</div>
+										<div class="slide-testimonial__name">
+											david james
+											<span>/ web design</span>
+										</div>
+										<div class="slide-testimonial__rating">
+											<picture>
+												<img alt="img-stars" src="./assets/img/stars.webp">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+								<button type="button" class="swiper-button-prev">
+									<picture>
+										<img alt="arrow" src="./assets/img/next.webp">
+									</picture>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<picture>
+										<img alt="arrow" src="./assets/img/next.webp">
+									</picture>
+								</button>
+							</div>
+						</div>
+					</section>
+					<section id="contacts" class="contacts">
+						<div class="contacts__container">
+							<div class="contacts__column">
+								<div class="contacts__img">
+									<picture>
+										<img alt="briefcase" src="./assets/img/briefcase.webp">
+									</picture>
+								</div>
+								<h3 class="contacts__title">Want to work together?</h3>
+								<div class="contacts__text">Amazing. Tell us about your project!</div>
+								<div class="contacts__arrow">
+									<picture>
+										<img alt="arrow" src="./assets/img/next.webp">
+									</picture>
+								</div>
+							</div>
+							<div class="contacts__column contacts__column--green">
+								<div class="contacts__img">
+									<picture>
+										<img alt="briefcase" src="./assets/img/mail.webp">
+									</picture>
+								</div>
+								<h3 class="contacts__title">
+									<a href="#!">Contact us</a>
+								</h3>
+								<div class="contacts__text">Get in touch</div>
+							</div>
+						</div>
+					</section>
+					<a class="btn-up --icon-face" href="#hero"></a>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__body">
+					<div class="footer__logo">
+						<picture>
+							<img alt="logo" src="./assets/img/LOGO.webp">
+						</picture>
+					</div>
+					<div class="footer__text">
+						<div class="footer__location">3rd Floor, Santa Monica Beach, CA, San Francisco</div>
+						<div class="footer__contacts">
+							<a href="tel:(359) 0 123 456 789">(359) 0 123 456 789</a>
+							<a href="meilto:info@yourmail.com">info@yourmail.com</a>
+						</div>
+					</div>
+					<div class="footer__social">
+						<a class="footer__icon --icon-face" href="#!"></a>
+						<a class="footer__icon --icon-twit" href="#!"></a>
+						<a class="footer__icon --icon-pint" href="#!"></a>
+					</div>
+				</div>
+				<div class="footer__copy">Copyright 2016 - All Rights Reserved - Designed by JD</div>
+			</footer>
+		</div>
+	</body>
+</html>
